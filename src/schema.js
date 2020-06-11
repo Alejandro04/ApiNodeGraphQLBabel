@@ -15,6 +15,8 @@ const typeDefs = `
 
     type Mutation {
         createUser(input: UserInput): User
+        deleteUser(_id: ID): User
+        updateUser(_id: ID, input: UserInput): User
     }
 
     input UserInput {
